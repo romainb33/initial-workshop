@@ -1,8 +1,39 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+body {
     margin: 0;
     padding: 0;
 }
+
+/* CSS PART */
+.blue {
+    color: blue;
+}
+
+#card {
+    border: 1px solid black;
+}
+
+#card td {
+    border: 1px solid black;
+    text-align: center;
+}
+.red {
+    border-color: red;
+    color: red;
+}
+.tense {
+    border-spacing: 0;
+}
+.tense td {
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* CSS PART */
 
 #main-box {
     border: 1px solid black;
@@ -65,10 +96,13 @@
 .row {
     display: inline-block;
     padding: 20px; /*why when I add left/righ padding it doesn't work?*/
-    width: 73px;
+    width: 75px;
     background-color: red;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 2px solid black;
+}
+
+.row:last-of-type {
+    border-right: 2px solid black;
 }
 
 .row p {
@@ -82,11 +116,14 @@
     margin-top: 2px;
     display: inline-block;
     padding: 20px; /*why when I add left/righ padding it doesn't work?*/
-    width: 73px;
+    width: 75px;
     background-color: black;
-    border-left: 1px solid red;
-    border-right: 1px solid red;
+    border-left: 2px solid red;
 }
+.black-row .row:last-of-type {
+    border-right: 2px solid red;
+}
+
 #main-container {
     
     width: 300px;
@@ -98,10 +135,13 @@
 
 .flexbox-col {
     background-color: orange;
-    border-left: 1px solid green;
-    border-right: 1px solid green;
+    border-left: 2px solid green;
     flex-grow:1;
     padding: 20px;
+}
+
+.flexbox-col:last-of-type {
+    border-right: 2px solid green;
 }
 
 .flexbox-col p {
@@ -111,6 +151,9 @@
 }
 .green {
     background-color: green;
-    border-left: 1px solid orange;
-    border-right: 1px solid orange;
+    border-left: 2px solid orange;
+}
+
+.green:last-of-type {
+    border-right: 2px solid orange;
 }
